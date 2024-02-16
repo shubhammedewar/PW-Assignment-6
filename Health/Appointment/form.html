@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <head>
+        <div class="navbar">
+            <div class="logo">
+                <img src="../Images/logo.png" alt=""  >
+            </div>
+            <div class="nav">
+                <ul>
+                    <li><a href="../home.html">Home</a></li>
+                    <li><a href="../About us/about.html">About us</a></li>
+                    <li><a href="../Contact us/contact.html">Contact us</a></li>
+                </ul>
+            </div>
+        </div>
+    </head>
+    <section>
+        <form method="post" action="handler.php">
+            <h1>Appointment Form</h1><br><br>
+            <span>Date</span><br>
+            <input type="date"><br><br>
+            <span> First Name</span><br>
+            <input type="text" placeholder="Enter your name"><br><br>
+            <span> Last Name</span><br>
+            <input type="text" placeholder="Enter your name"><br><br>
+            <span>Date of birth</span><br>
+            <input type="date"><br><br>
+            <span>Address</span><br>
+            <input type="text" placeholder="Enter your address"><br><br>
+            <select name="Doctors" required>
+                <option aria-required="true">Select doctor</option>
+                <option value="Radiologist">Radiologist</option>
+                <option value="FHL">Ortho</option>
+                <option value="SSM">Neurologist</option>
+                <option value="USD">Cardiologist</option>
+            </select>
+            <br><br>
+            <span>Contact</span><br>
+            <input type="number" placeholder="Enter your phone number"><br>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+</body>
+</html>
